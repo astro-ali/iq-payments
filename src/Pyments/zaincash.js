@@ -11,15 +11,15 @@ const fetch = require("node-fetch");
  */
 
 // prameters example for me
-// const paymentDetails = {
-//   lang: "en",
-//   amount: "250",
-//   serviceType: "fin hackthon",
-//   orderId: "123",
-//   redirectUrl: "localhost:5000/redirectHome",
-// };
+const paymentDetails = {
+  lang: "en",
+  amount: "250",
+  serviceType: "fin hackthon",
+  orderId: "123",
+  redirectUrl: "localhost:5000/redirectHome",
+};
 
-class ZainCash {
+export default class ZainCash {
   static init(paymentDetails) {
     // constant URL for testing zainCash API
     let initUrl = "https://test.zaincash.iq/transaction/init";
@@ -108,5 +108,3 @@ class ZainCash {
     }
   }
 }
-
-export default ZainCash;

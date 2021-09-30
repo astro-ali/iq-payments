@@ -14,7 +14,8 @@ const paymentDetails = {
   return: "https://yourdomain.com/yourpage",
 };
 
-class Paytab {
+
+export default class Paytab {
   static async init(paymentDetails) {
     var myHeaders = new Headers();
     myHeaders.append("Authorization", process.env.PAYTAB_SERVER_KEY);
@@ -45,5 +46,3 @@ class Paytab {
       }
   }
 }
-
-export default Paytab;

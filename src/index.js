@@ -4,7 +4,7 @@ const arab = require('./Pyments/arab');
 
 // ['zaincash', 'paytab', 'arab', 'tsdid', 'switch','amwal']
 
-class IQPayment {
+export default class IQPayment {
   static async init(method, paymentDetails) {
     // zaincash
     if (method === "zaincash") {
@@ -54,5 +54,3 @@ class IQPayment {
       }
   }
 }
-
-export default IQPayment;

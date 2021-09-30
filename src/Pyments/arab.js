@@ -12,7 +12,8 @@ require("dotenv").config();
 //   sessionTimeoutSecs: "5000",
 // };
 
-class ArabPaymentGatway {
+
+export default class ArabPaymentGatway {
   static async init() {
     var myHeaders = new Headers(paymentDetails);
     myHeaders.append("conte", "application/x-www-form-urlencoded");
@@ -72,5 +73,3 @@ class ArabPaymentGatway {
       }
   }
 }
-
-export default ArabPaymentGatway;

@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon zaincash.js"
+    "server": "nodemon zaincash.js",
+    "test":"nodemon src/test.js"
   },
   "keywords": [],
   "author": "",
